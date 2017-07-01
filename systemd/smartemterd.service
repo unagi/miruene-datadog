@@ -1,0 +1,13 @@
+[Unit]
+Description=Smartmeterd
+After=syslog.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/miruene-datadog
+ExecStart=/opt/miruene-datadog/smartmeter.py
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target

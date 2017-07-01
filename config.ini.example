@@ -1,0 +1,7 @@
+[General]
+com_port = /dev/ttyS0
+interval = 10
+
+[RouteB]
+rbid  = xxxxxxxxxx
+rbpwd = xxxx

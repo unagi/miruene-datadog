@@ -77,7 +77,9 @@ class EchonetLite(object):
                 self._res = line.split(' ')[-1]
 
         def is_valid_response(self):
-            if self._res is None:
+            if hasattr(self, '_res'):
+                return False
+            elif self._res is None:
                 return False
             elif not (self.seoj == EchonetLite.smart_meter() and self.esv == EchonetLite.ESV.GET_RES):
                 return False

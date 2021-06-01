@@ -15,4 +15,4 @@ python-apt==0.9.3.12
 requests==2.18.1
 RPi.GPIO==0.6.3
 simplejson==3.11.1
-urllib3==1.21.1
+urllib3==1.26.5
